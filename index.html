@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ryan Khairollahi — Software Engineer</title>
+    <meta name="description" content="Personal website and portfolio for Ryan Khairollahi — CS @ Vanderbilt. Robotics, AI/ML, and product engineering." />
+    <meta property="og:title" content="Ryan Khairollahi — Software Engineer" />
+    <meta property="og:description" content="CS @ Vanderbilt. Robotics, AI/ML, and product engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/og-image.png" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+        :root {
+          --bg: #0b0f19;
+          --panel: #111827;
+          --muted: #94a3b8;
+          --text: #e2e8f0;
+          --accent: #0ea5e9; /* sky-500 */
+          --ring: rgba(14,165,233,.35);
+          --radius: 16px;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+        a { color: var(--text); text-decoration: none; }
+        a:hover { color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+        header { position: sticky; top: 0; backdrop-filter: saturate(140%) blur(12px); background: rgba(11,15,25,.75); border-bottom: 1px solid rgba(148,163,184,.15); z-index: 50; }
+        .nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px }
+        .chip { padding: 6px 10px; border: 1px solid rgba(148,163,184,.25); border-radius: 999px; font-size: 12px; color: var(--muted); }
+        .btn { display:inline-flex; align-items:center; gap:8px; padding: 10px 14px; border-radius: 999px; background: var(--accent); color:#001018; font-weight:600; border: 1px solid rgba(14,165,233,.35); box-shadow: 0 8px 30px -12px var(--ring); transition: transform .08s ease; }
+        .btn:active { transform: translateY(1px); }
+        .hero { padding: 72px 0 32px; display:grid; grid-template-columns: 1.2fr 1fr; gap:32px; align-items:center; }
+        .hero .panel { background: linear-gradient(180deg, rgba(17,24,39,.8), rgba(17,24,39,.6)); border: 1px solid rgba(148,163,184,.2); border-radius: var(--radius); padding: 28px; box-shadow: 0 10px 30px -15px rgba(0,0,0,.6); }
+        h1 { font-size: clamp(28px, 4.5vw, 44px); margin: 0 0 8px; }
+        .lead { color: var(--muted); font-size: clamp(14px, 2.2vw, 18px); line-height: 1.6; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+        .card { background: var(--panel); border: 1px solid rgba(148,163,184,.2); border-radius: var(--radius); padding: 18px; transition: transform .12s ease, border-color .12s ease; }
+        .card:hover { transform: translateY(-2px); border-color: rgba(14,165,233,.55); }
+        .kicker { color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+        h2 { margin: 28px 0 10px; font-size: clamp(20px, 3vw, 28px); }
+        h3 { margin: 10px 0 8px; font-size: 16px; }
+        ul { padding-left: 18px; margin: 8px 0; }
+        .tag { display:inline-flex; padding:6px 10px; border:1px solid rgba(148,163,184,.25); border-radius:999px; color: var(--muted); font-size: 12px; margin-right: 6px; margin-top: 6px; }
+        .tags { margin-top: 8px; }
+        .section { margin: 36px 0; }
+        .footer { margin-top: 40px; padding: 24px 0 48px; color: var(--muted); font-size: 14px; border-top:1px solid rgba(148,163,184,.15) }
+        .social a { margin-right: 12px; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+          .hero { grid-template-columns: 1fr; }
+          .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ryan Khairollahi",
+            "url": "https://example.com",
+            "jobTitle": "Software Engineering Student",
+            "affiliation": {"@type":"CollegeOrUniversity","name":"Vanderbilt University"},
+            "sameAs": [
+                "https://github.com/rkhairollahi",
+                "https://www.linkedin.com/in/REPLACE-LINK"
+            ]
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="container nav">
+        <div class="brand">
+            <span class="chip">RK</span>
+            <span>Ryan Khairollahi</span>
+        </div>
+        <nav class="social" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a class="btn" href="/resume.pdf">Download Resume</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <div>
+            <h1>Software Engineering @ Vanderbilt — Robotics • AI/ML • Product</h1>
+            <p class="lead">I build human-centered software and robotics systems. Interned at Deloitte on AI/ML + robotics teams (Spot & Pepper). Currently developing <strong>Glasses for Good</strong> (custom eyewear via LiDAR + ML, with VUMC) and a <strong>Motorsports Telemetry</strong> system for Formula SAE.</p>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">SLAM</span>
+                <span class="tag">LiDAR</span>
+                <span class="tag">Docker</span>
+                <span class="tag">NumPy/Pandas</span>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="kicker">Featured</div>
+            <h3>Deloitte — Product Engineering (AI/ML)</h3>
+            <ul>
+                <li>Waypoint navigation for Boston Dynamics Spot validated across 50+ runs (≈1 yd accuracy) in two offices.</li>
+                <li>GPT-driven voice interface + exec demos (20+ leaders) for Greenhouse showcase.</li>
+            </ul>
+            <h3>Glasses for Good — In Development</h3>
+            <ul>
+                <li>LiDAR → 3D fit pipeline for pediatric craniofacial eyewear (with VUMC).</li>
+                <li>Exploring seed grant + first prototype frames.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="kicker">Projects</div>
+        <h2>Selected Projects</h2>
+        <div class="grid">
+            <article class="card" aria-labelledby="p1">
+                <h3 id="p1">Glasses for Good <span class="chip">In Progress</span></h3>
+                <p>ML pipeline to generate custom-fit glasses from LiDAR facial scans for children with craniofacial deformities. Collaboration with a VUMC ophthalmology team.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">TensorFlow</span><span class="tag">LiDAR</span><span class="tag">3D Printing</span>
+                </div>
+                <a class="btn" href="#" aria-label="View case study for Glasses for Good">Case Study (soon)</a>
+            </article>
+            <article class="card" aria-labelledby="p2">
+                <h3 id="p2">Motorsports Telemetry <span class="chip">In Progress</span></h3>
+                <p>Integrating ECU + RaceBox data for real-time Formula SAE analysis; prototyping ML models for driver performance and Splunk dashboards for telemetry.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">MATLAB</span><span class="tag">Splunk (exploring)</span>
+                </div>
+                <a class="btn" href="#">Repo (soon)</a>
+            </article>
+            <article class="card" aria-labelledby="p3">
+                <h3 id="p3">Blockify Quadruped</h3>
+                <p>Low-cost 3D-printed quadruped with Arduino-based gait control; pitched live at Founders Live Nashville (100+ investors).</p>
+                <div class="tags">
+                    <span class="tag">C++</span><span class="tag">Arduino</span><span class="tag">3D Printing</span>
+                </div>
+                <a class="btn" href="#">Video Demo</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="kicker">Experience</div>
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Deloitte — Software Engineering Intern, Product Engineering (AI/ML) <span class="chip">2025</span></h3>
+            <ul>
+                <li>Engineered waypoint navigation for Spot (SLAM + LiDAR SDK); 50+ runs, ~1 yd accuracy, two offices.</li>
+                <li>Co-presented Greenhouse demo to 20+ partners/managing directors; highlighted AI/ML + prompt engineering use cases.</li>
+                <li>Developed GPT-based interface for natural-language navigation commands.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Deloitte — Software Engineering Intern, Product Engineering (AI/ML) <span class="chip">2024</span></h3>
+            <ul>
+                <li>Programmed Pepper motions in Python and linked to GPT voice commands (multilingual), enabling interactive, accessible demos.</li>
+                <li>Built Python GUI to override listening state; improved recognition reliability from ~70% → >95% across 10+ noisy environments.</li>
+                <li>Deployed GPT-integrated speech + audio detection for a Deloitte AI showcase; supported reliable demos for 200+ attendees.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Blockify — Co‑Founder <span class="chip">2022–2023</span></h3>
+            <ul>
+                <li>3D‑printed chassis + Arduino gait control (C++), reducing cost ~40% vs. comparable kits; pitched to 100+ investors.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="kicker">Contact</div>
+        <h2>Get in touch</h2>
+        <p class="lead">Email <a href="mailto:ryan.khairollahi@vanderbilt.edu">ryan.khairollahi@vanderbilt.edu</a> or connect below.</p>
+        <p class="social">
+            <a href="https://github.com/rkhairollahi" aria-label="GitHub">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/REPLACE-LINK" aria-label="LinkedIn">LinkedIn</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div>© <span id="y"></span> Ryan Khairollahi • Built with vanilla HTML/CSS</div>
+    </footer>
+</main>
+
+<script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
