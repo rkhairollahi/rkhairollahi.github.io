@@ -1,40 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ryan Khairollahi</title>
-    <style>
-        body {
-          font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          background: #0b0f19;
-          color: #e2e8f0;
-          text-align: center;
-        }
-        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        p { color: #94a3b8; }
-        a {
-          color: #0ea5e9;
-          text-decoration: none;
-          font-weight: 600;
-        }
-        a:hover { text-decoration: underline; }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Khairollahi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/headshot.jpg" />
 </head>
 <body>
-<h1>Ryan Khairollahi</h1>
-<p>Personal website coming soon.</p>
-<p>
-    In the meantime, connect via
-    <a href="mailto:ryan.khairollahi@vanderbilt.edu">Email</a> ·
-    <a href="https://www.linkedin.com/in/ryan-khairollahi">LinkedIn</a> ·
-    <a href="https://github.com/rkhairollahi">GitHub</a>
-</p>
+<!-- Navigation -->
+<header class="site-header">
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">Ryan Khairollahi</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero / Home -->
+    <section id="home" class="hero section">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow">Hey, I'm</p>
+                <h1 class="hero-title">Ryan Khairollahi</h1>
+                <p class="hero-subtitle">
+                    Junior at Vanderbilt studying Computer Science with minors in Data Science and Scientific Computing.
+                </p>
+                <p class="hero-body">
+                    I build software and robots that actually ship: from programming Boston Dynamics Spot for real clients,
+                    to creating affordable quadruped robots for underfunded schools, to 3D-printed AI-powered eyeglasses
+                    for kids with craniofacial differences. I like working at the intersection of robotics, AI, and real-world impact.
+                </p>
+                <div class="hero-actions">
+                    <a href="#experience" class="btn primary-btn">View Experience</a>
+                    <a href="#projects" class="btn secondary-btn">See Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Put your own headshot in /assets and update the filename if needed -->
+                <img src="assets/headshot.jpg" alt="Headshot of Ryan Khairollahi" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Skills -->
+    <section id="experience" class="section section-alt">
+        <div class="section-header">
+            <h2>Experience &amp; Skills</h2>
+            <p>A snapshot of what I work with and what I’ve done recently.</p>
+        </div>
+
+        <div class="experience-grid">
+            <!-- Skills -->
+            <div class="card skills-card">
+                <h3>Technical Overview</h3>
+                <div class="skills-columns">
+                    <div class="skills-group">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C / C++</li>
+                            <li>Racket, Prolog</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Frameworks / Tools</h4>
+                        <ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Docker, Linux</li>
+                            <li>Git / GitHub</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Concepts</h4>
+                        <ul>
+                            <li>Operating Systems &amp; Concurrency</li>
+                            <li>Data Structures &amp; Algorithms</li>
+                            <li>Machine Learning &amp; AI Agents</li>
+                            <li>Distributed &amp; Systems Programming</li>
+                        </ul>
+                    </div>
+                    <div class="skills-group">
+                        <h4>Other</h4>
+                        <ul>
+                            <li>Robotics: Boston Dynamics Spot</li>
+                            <li>3D Printing &amp; CAD</li>
+                            <li>Technical Writing &amp; Mentorship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deloitte AI/ML Product Engineering -->
+            <div class="card experience-card">
+                <h3>AI / ML Product Engineering Intern — Deloitte</h3>
+                <p class="experience-meta">
+                    Summer 2024 &amp; 2025 · Nashville, TN
+                </p>
+                <ul class="experience-list">
+                    <li>
+                        Programmed Boston Dynamics Spot to autonomously navigate client environments using SLAM and LiDAR,
+                        including multimodal interactions in multiple languages.
+                    </li>
+                    <li>
+                        Built a GUI-based audio detection system that monitored industrial environments and surfaced meaningful alerts
+                        to stakeholders.
+                    </li>
+                    <li>
+                        Designed and demoed production-ready AI/ML-powered prototypes to internal and external clients,
+                        focusing on usability and clear ROI.
+                    </li>
+                    <li>
+                        Worked across the stack: data pipelines, model integration, backend services, and front-end interfaces.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Blockify / Robotics for Education -->
+            <div class="card experience-card">
+                <h3>Co-founder — Blockify Robotics</h3>
+                <p class="experience-meta">
+                    2024–Present · Affordable quadruped robots for schools
+                </p>
+                <ul class="experience-list">
+                    <li>
+                        Co-founded a project to build low-cost quadruped robots that make robotics education accessible
+                        to underfunded schools.
+                    </li>
+                    <li>
+                        Developed control software for locomotion, basic autonomy, and classroom-safe demos.
+                    </li>
+                    <li>
+                        Coordinated hardware–software integration and worked with educators to design useful curricula.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Glasses for Good / Vanderbilt Motorsports / Blockchain -->
+            <div class="card experience-card">
+                <h3>Other Experience</h3>
+                <ul class="experience-list">
+                    <li>
+                        <strong>Glasses for Good</strong> — Building AI-assisted, 3D-printed eyewear for children with craniofacial differences in collaboration with Vanderbilt University Medical Center.
+                    </li>
+                    <li>
+                        <strong>Vanderbilt Motorsports (FSAE)</strong> — Worked on exhaust and mechanical design for a Formula SAE race car.
+                    </li>
+                    <li>
+                        <strong>Vanderbilt Blockchain</strong> — Analyst on the index fund team, performing research on L1s/L2s and blockchain infrastructure.
+                    </li>
+                    <li>
+                        Multiple course projects in Operating Systems, Programming Languages, and Algorithms with heavy emphasis on C, concurrency, and low-level systems.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Stuff I’ve Built</h2>
+            <p>A few projects that capture what I like working on.</p>
+        </div>
+
+        <div class="projects-grid">
+            <a class="card project-card" href="#" target="_blank" rel="noreferrer">
+                <h3>Spot: Multilingual Voice Interaction</h3>
+                <p>
+                    Designed and implemented a voice-based interaction system for Boston Dynamics Spot,
+                    allowing users to command the robot in multiple languages with natural speech.
+                </p>
+                <span class="project-link">Demo / Writeup (coming soon) ↗</span>
+            </a>
+
+            <a class="card project-card" href="#" target="_blank" rel="noreferrer">
+                <h3>Industrial Audio Detection GUI</h3>
+                <p>
+                    Built a GUI and backend pipeline that detects anomalous sounds in noisy industrial environments,
+                    surfacing alerts and visualizations to operators.
+                </p>
+                <span class="project-link">Project Details (coming soon) ↗</span>
+            </a>
+
+            <a class="card project-card" href="#" target="_blank" rel="noreferrer">
+                <h3>Blockify Quadruped Robot</h3>
+                <p>
+                    Co-developed affordable quadruped robots with open-source software so high school students
+                    can learn robotics, control, and programming on real hardware.
+                </p>
+                <span class="project-link">Repo / Site (coming soon) ↗</span>
+            </a>
+
+            <a class="card project-card" href="#" target="_blank" rel="noreferrer">
+                <h3>Glasses for Good</h3>
+                <p>
+                    An AI-enabled workflow to design and 3D-print custom eyeglass frames for kids with craniofacial differences,
+                    focusing on comfort, fit, and confidence.
+                </p>
+                <span class="project-link">Project Overview (coming soon) ↗</span>
+            </a>
+
+            <a class="card project-card" href="#" target="_blank" rel="noreferrer">
+                <h3>Systems &amp; OS Projects</h3>
+                <p>
+                    From custom spinlocks and futex-based mutexes to schedulers and file-system style labs in C,
+                    built as part of advanced OS coursework.
+                </p>
+                <span class="project-link">Code Samples (coming soon) ↗</span>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <p class="gallery-caption">Some random snapshots.</p>
+            <div class="gallery-grid">
+                <!-- Swap these with photos of: Spot, robots, FSAE car, etc. -->
+                <img src="assets/photo1.jpg" alt="Robotics / project photo 1" />
+                <img src="assets/photo2.jpg" alt="Robotics / project photo 2" />
+                <img src="assets/photo3.jpg" alt="Robotics / project photo 3" />
+                <img src="assets/photo4.jpg" alt="Robotics / project photo 4" />
+                <img src="assets/photo5.jpg" alt="Robotics / project photo 5" />
+                <img src="assets/photo6.jpg" alt="Robotics / project photo 6" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section section-alt">
+        <div class="section-header">
+            <h2>Resume</h2>
+            <p>For more details on my experience, you can grab the PDF version here.</p>
+        </div>
+        <div class="resume-cta">
+            <!-- Update the filename to your actual resume -->
+            <a href="assets/ryan-khairollahi-resume.pdf" class="btn primary-btn" target="_blank" rel="noreferrer">
+                Open Full Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Contact</h2>
+            <p>Interested in robotics, AI, or building something together? Reach out.</p>
+        </div>
+        <div class="contact-block">
+            <p>
+                Shoot me an email at
+                <!-- Replace with your real email -->
+                <a href="mailto:your.email@vanderbilt.edu">your.email@vanderbilt.edu</a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Ryan Khairollahi. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
